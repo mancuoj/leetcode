@@ -13,5 +13,5 @@
 | ------------------------------------------------------------------ | -------- | --- | ----------- | --- | -------- |
 | [第 97 场双周赛](https://leetcode.cn/contest/biweekly-contest-97/) | 23-02-04 | 1   | 1887 / 2631 | 1   | 0:12:59  |
 | [第 331 场周赛](https://leetcode.cn/contest/weekly-contest-331/)   | 23-02-05 | 2   | 2378 / 4256 | 3   | 1:13:49  |
-| [第 332 场周赛](https://leetcode.cn/contest/weekly-contest-332/)   | 23-02-12 |     |             |     |          |
+| [第 332 场周赛](https://leetcode.cn/contest/weekly-contest-332/)   | 23-02-12 | ❌   | ❌           | ❌   | ❌        |
 
