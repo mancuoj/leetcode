@@ -15,4 +15,6 @@
 | [第 331 场周赛](https://leetcode.cn/contest/weekly-contest-331/)   | 23-02-05 | 2   | 2378 / 4256 | 3   | 1:13:49  |
 | [第 332 场周赛](https://leetcode.cn/contest/weekly-contest-332/)   | 23-02-12 | ❌   | ❌           | ❌   | ❌        |
 | [第 98 场双周赛](https://leetcode.cn/contest/biweekly-contest-98)  | 23-02-18 | 1   | 1817 / 3250 | 1   | 0:17:13  |
+| [第 333 场周赛](https://leetcode.cn/contest/weekly-contest-333/)   | 23-02-19 | 1   | 2541 / 4969 | 0   | 0:04:36  |
+
 
