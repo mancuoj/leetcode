@@ -16,5 +16,6 @@
 | [第 332 场周赛](https://leetcode.cn/contest/weekly-contest-332/)   | 23-02-12 | ❌   | ❌           | ❌   | ❌        |
 | [第 98 场双周赛](https://leetcode.cn/contest/biweekly-contest-98)  | 23-02-18 | 1   | 1817 / 3250 | 1   | 0:17:13  |
 | [第 333 场周赛](https://leetcode.cn/contest/weekly-contest-333/)   | 23-02-19 | 1   | 2541 / 4969 | 0   | 0:04:36  |
+| [第 334 场周赛](https://leetcode.cn/contest/weekly-contest-334/)   | 23-02-26 | 2   | 1698 / 5501 | 1   | 0:18:57  |
 
 
