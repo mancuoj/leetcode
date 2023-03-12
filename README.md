@@ -18,6 +18,6 @@
 | [第 333 场周赛](https://leetcode.cn/contest/weekly-contest-333/)   | 23-02-19 | 1   | 2541 / 4969 | 0   | 0:04:36  |
 | [第 334 场周赛](https://leetcode.cn/contest/weekly-contest-334/)   | 23-02-26 | 2   | 1698 / 5501 | 1   | 0:18:57  |
 | [第 99 场双周赛](https://leetcode.cn/contest/biweekly-contest-99)  | 23-03-04 | 1   | 2441 / 3467 | 1   | 0:18:03  |
-| [第 335 场周赛](https://leetcode.cn/contest/weekly-contest-335/)   | 23-03-05 | 2   |             | 1   |          |
+| [第 335 场周赛](https://leetcode.cn/contest/weekly-contest-335/)   | 23-03-05 | 2   | 1694 / 6019 | 1   | 0:17:56  |
 | [第 336 场周赛](https://leetcode.cn/contest/weekly-contest-336/)   | 23-03-0  | 2   | 4087 / 5897 | 7   | 1:43:23  |
 
