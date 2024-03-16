@@ -5,6 +5,42 @@
  */
 var cancellable = function (generator) {
   let cancel
+  const promise = new Promise((resolve, reject) => {
+    cancel = () => onRejected('Cancelled')
+
+    onFulfilled()
+
+    function onFulfilled(res) {
+      let ret
+      try {
+        ret = generator.next(res)
+      } catch (e) {
+        return reject(e)
+      }
+      next(ret)
+    }
+
+    function onRejected(err) {
+      var ret
+      try {
+        ret = generator.throw(err)
+      } catch (e) {
+        return reject(err)
+      }
+      next(ret)
+    }
+
+    function next(ret) {
+      if (ret.done) return resolve(ret.value)
+      if (ret.value.then) ret.value.then(onFulfilled, onRejected)
+      else onFulfilled(ret.value)
+    }
+  })
+  return [cancel, promise]
+}
+
+var cancellable2 = function (generator) {
+  let cancel
   const promise = new Promise(async (resolve, reject) => {
     cancel = async () => {
       try {
