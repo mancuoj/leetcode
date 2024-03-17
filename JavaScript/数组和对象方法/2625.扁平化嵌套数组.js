@@ -5,7 +5,7 @@
  * @return {Array}
  */
 var flat = function (arr, n) {
-  if (n <= 0) return arr
+  if (n === 0) return arr
 
   const res = []
   for (const item of arr) {
