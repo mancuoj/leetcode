@@ -67,7 +67,7 @@
  * @return {number[]}
  */
 var twoSum = function (nums, target) {
-  let map = new Map()
+  const map = new Map()
   for (let i = 0; ; i++) {
     if (map.has(target - nums[i])) {
       return [map.get(target - nums[i]), i]

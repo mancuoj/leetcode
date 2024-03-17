@@ -10,40 +10,15 @@ var promiseAll = function (functions) {
       return
     }
 
-    const res = new Array(functions.length)
-    let resolveCnt = 0
+    const res = []
+    let cnt = 0
     functions.forEach((fn, idx) => {
-      Promise.resolve(fn())
+      fn()
         .then((result) => {
           res[idx] = result
-          if (++resolveCnt === functions.length) {
-            resolve(res)
-          }
+          if (++cnt === functions.length) resolve(res)
         })
         .catch(reject)
-    })
-  })
-}
-
-var promiseAll2 = function (functions) {
-  return new Promise((resolve, reject) => {
-    if (functions.length === 0) {
-      resolve([])
-      return
-    }
-
-    const res = new Array(functions.length).fill(null)
-    let resolveCnt = 0
-    functions.forEach(async (fn, idx) => {
-      try {
-        const fnRes = await fn()
-        res[idx] = fnRes
-        if (++resolveCnt === functions.length) {
-          resolve(res)
-        }
-      } catch (err) {
-        reject(err)
-      }
     })
   })
 }
