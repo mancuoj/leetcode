@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <ul id="myList">
+      <li id="item1">项目 1</li>
+      <li id="item3">项目 3</li>
+      <li id="item2">项目 2</li>
+      <li id="item4">项目 4</li>
+    </ul>
+
+    <script>
+      function sortAndReturnTextContent() {
+        const items = document.getElementById('myList').children
+        // 在此补全代码
+        document.getElementById('myList').innerHTML = Array.from(items)
+          .sort((a, b) => parseInt(a.id.slice(4)) - parseInt(b.id.slice(4)))
+          .map((item) => item.outerHTML)
+          .join('')
+      }
+      sortAndReturnTextContent()
+    </script>
+  </body>
+</html>
