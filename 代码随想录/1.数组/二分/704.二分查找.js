@@ -52,27 +52,35 @@
 var search = function (nums, target) {
   let left = 0
   let right = nums.length - 1
-  // 区间不变 [left, right]
   while (left <= right) {
     mid = (left + right) >> 1
-    if (nums[mid] > target) right = mid - 1 // 落在左区间里 [left, mid-1]
-    else if (nums[mid] < target) left = mid + 1 // 右区间 [mid+1, right]
+    if (nums[mid] > target) right = mid - 1
+    else if (nums[mid] < target) left = mid + 1
     else return mid
   }
   return -1
 }
 // @lc code=end
 
-// 二分前提：有序
-// 查找失败情况 left 总是指向 right 后一位
 const search2 = function (nums, target) {
   let left = 0
   let right = nums.length
-  // 区间不变 [left, right)
   while (left < right) {
     let mid = (left + right) >> 1
-    if (nums[mid] > target) right = mid // [left, mid)
-    else if (nums[mid] < target) left = mid + 1 // [mid+1, right)
+    if (nums[mid] > target) right = mid
+    else if (nums[mid] < target) left = mid + 1
+    else return mid
+  }
+  return -1
+}
+
+const search3 = function (nums, target) {
+  let left = -1
+  let right = nums.length
+  while (left + 1 < right) {
+    let mid = (left + right) >> 1
+    if (nums[mid] > target) right = mid
+    else if (nums[mid] < target) left = mid
     else return mid
   }
   return -1

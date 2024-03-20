@@ -68,8 +68,7 @@ var searchInsert = function (nums, target) {
     else if (nums[mid] < target) left = mid + 1
     else return mid
   }
-  // return left
-  return right + 1
+  return left
 }
 // @lc code=end
 
