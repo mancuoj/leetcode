@@ -55,10 +55,10 @@ var arrangeCoins = function (n) {
   let right = n
   while (left <= right) {
     let mid = left + ((right - left) >> 1)
-    if ((mid * (mid + 1)) / 2 <= n) {
-      left = mid + 1
-    } else {
+    if (n < (mid * (mid + 1)) / 2) {
       right = mid - 1
+    } else {
+      left = mid + 1
     }
   }
   return right
