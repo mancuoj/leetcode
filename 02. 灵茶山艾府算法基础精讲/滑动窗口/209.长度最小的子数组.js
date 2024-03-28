@@ -69,17 +69,18 @@
  * @return {number}
  */
 var minSubArrayLen = function (target, nums) {
-  let ans = Infinity
+  let n = nums.length
+  let ans = n + 1
   let sum = 0
   let left = 0
-  for (let right = 0; right < nums.length; right++) {
+  for (let right = 0; right < n; right++) {
     sum += nums[right]
     while (sum >= target) {
       ans = Math.min(ans, right - left + 1)
       sum -= nums[left++]
     }
   }
-  return ans <= nums.length ? ans : 0
+  return ans <= n ? ans : 0
 }
 // @lc code=end
 
